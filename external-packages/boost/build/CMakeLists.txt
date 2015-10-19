@@ -3,7 +3,7 @@
 #
 # Expected CMake variables are:
 #
-#  MODULES_SEARCH_PATH          : Search path for cmake-common modules
+#  MODULES_SEARCH_PATH          : Search path for cmake-build-system modules
 #  BOOST_SOURCE_DIR <path>      : The absolute path to the Boost's source tree
 #  BOOST_NO_COMPONENTS          : Boolean flag if no components has to be built
 #  BOOST_COMPONENTS <components>: List of components to build

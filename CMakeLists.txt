@@ -1,11 +1,11 @@
 # ------------------------------------------------------------------------------
-# This script makes all CMakeCommon's helpers available for caller
+# This script makes all CMakeBuildSystem's helpers available for caller
 #
 # For more information about available helpers, please have a look to the
 # script packages in this source tree.
 #
 # Usage:
-#   add_subdirectory("/path/to/cmake-common")
+#   add_subdirectory("/path/to/cmake-build-system")
 #
 # ------------------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 #
 # Expected CMake variables are:
 #
-#  MODULES_SEARCH_PATH        : Search path for cmake-common modules
+#  MODULES_SEARCH_PATH        : Search path for cmake-build-system modules
 #  OPENSSL_SOURCE_DIR <path>  : The absolute path to the OpenSSL's source tree
 #  OPENSSL_EXTRA_FLAGS        : Extra flags to provide to OpenSSL's
 #                               configuration script

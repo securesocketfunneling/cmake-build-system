@@ -23,7 +23,7 @@ project. This is performed through two steps:
 * [Update Modules Search Path](#update-modules-search-path)
 
 ### Reference sub-module
-In order for the targeted **CMake** based Project to use **CMakeCommon**'s
+In order for the targeted **CMake** based Project to use **CMakeBuildSystem**'s
 helpers, it must first reference it.
 
 This is easily performed thanks to **git**'s *submodule* feature:
@@ -31,26 +31,26 @@ This is easily performed thanks to **git**'s *submodule* feature:
 # Go to the project's root path
 cd targeted_project
 
-# Add CMakeCommon sub-module.
+# Add CMakeBuildSystem sub-module.
 # Note
-#   We choose, here, to link sub-module under path 'cmake' located in the root
+#   We choose, here, to link sub-module under path 'cmake-build-system' located in the root
 #   of the project.
-git submodule add -b develop "repo_url/cmake-common.git" cmake
+git submodule add -b master "https://github.com/securesocketfunneling/cmake-build-system.git" cmake-build-system
 
-# Ensure all CMakeCommon's sub-modules are checked-out
-git submodule update --init --recursive cmake
+# Ensure all CMakeBuildSystem's sub-modules are checked-out
+git submodule update --init --recursive cmake-build-system
 ```
 
 ### Update Modules Search Path
-Once the **CMakeCommon** module is available from the targeted project's source
+Once the **CMakeBuildSystem** module is available from the targeted project's source
 tree, it must be initialized from a *CMakeLists.txt* list of the project. Just
 add the following lines:
 ```cmake
-# Initialize sub-module CMakeCommon that is linked on project's root
-add_subdirectory(${CMAKE_SOURCE_DIR}/cmake)
+# Initialize sub-module CMakeBuildSystem that is linked on project's root
+add_subdirectory(${CMAKE_SOURCE_DIR}/cmake-build-system)
 ```
 > **Note**
 >
-> It is recommended to initialize the **CMakeCommon** module from the root
+> It is recommended to initialize the **CMakeBuildSystem** module from the root
 > *CMakeLists.txt* file. That will ensure the module's helpers are available to
 > all of the other project's *CMakeLists.txt* files.

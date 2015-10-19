@@ -40,7 +40,7 @@ runtime library
 ### Preliminary
 In order to allow the use of this script, several points must be done first:
 
-#### CMakeCommon module
+#### CMakeBuildSystem module
 This module **must** be enabled in the project wishing to use the
 `Find<package_name>.cmake` helper.
 
